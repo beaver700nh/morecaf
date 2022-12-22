@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MoReCAF</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="header" class="emphasized">
+      _M_ost _R_ecent _Common _Ancestor _Finder
+    </h1>
+    <p id="output">
+      <span>The MoReCA of</span>
+      <span id="org1" class="unknown"></span>
+      <span>and</span>
+      <span id="org2" class="unknown"></span>
+      <span>is</span>
+      <span id="moreca" class="unknown"></span>
+    </p>
+    <div id="content">
+      <div class="node-container">
+        <template id="_node">
+          <div class="node">
+            <p class="node-content"></p>
+            <div class="node-container"></div>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div id="new-node" class="popup hidden">
+      <div class="form-box">
+        <label for="i-node-name">Enter the node name:</label>
+        <input type="text" id="i-node-name" class="form-data"
+          name="name" value="Unnamed Organism"></input>
+        <button class="popup-ok">OK</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
